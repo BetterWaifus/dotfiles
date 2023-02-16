@@ -29,6 +29,9 @@ gaps outer 5px
 # Sets xrandr display config
 exec --no-startup-id xrandr --output DVI-D-0 --off --output HDMI-0 --off --output DP-0 --off --output DP-1 --off --output DP-2 --mode 1920x1080 --pos 0x0 --rotate left --output DP-3 --off --output DP-4 --primary --mode 2560x1440 --pos 1080x240 --rotate normal --output DP-5 --off
 
+# Starts gnome-polkit to authenticate admin apps
+exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+
 # Start XDG autostart .desktop files using dex. See also
 # https://wiki.archlinux.org/index.php/XDG_Autostart
 exec --no-startup-id dex --autostart --environment i3
@@ -206,9 +209,6 @@ exec --no-startup-id picom -b
 # Add this to your .xinitrc or whatever file starts programs on startup.
 # -R restores the last colorscheme that was in use.
 exec --no-startup-id wal -R
-
-# Starts gnome-polkit to authenticate admin apps
-exec --no-startup-id bash /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 
 # Set colors from Xresources
 # Change 'color7' and 'color2' to whatever colors you want i3 to use 
