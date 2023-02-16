@@ -207,6 +207,9 @@ exec --no-startup-id picom -b
 # -R restores the last colorscheme that was in use.
 exec --no-startup-id wal -R
 
+# Starts gnome-polkit to authenticate admin apps
+exec --no-startup-id bash /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+
 # Set colors from Xresources
 # Change 'color7' and 'color2' to whatever colors you want i3 to use 
 # from the generated scheme.
