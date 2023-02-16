@@ -195,7 +195,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 #Sets background with feh
-exec --no-startup-id feh --bg-fill /home/styley/wallpaper/image.png
+exec --no-startup-id feh --bg-fill --randomize /home/styley/wallpaper/
 
 # Start Polybar to display system information
 exec --no-startup-id polybar
