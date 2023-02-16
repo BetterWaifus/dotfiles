@@ -194,11 +194,11 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-# Start Polybar to display system information
-exec --no-startup-id polybar
-
 #Sets background with feh
 exec --no-startup-id feh --bg-fill /home/styley/wallpaper/image.png
+
+# Start Polybar to display system information
+exec --no-startup-id polybar
 
 #starts picom compositor
 exec --no-startup-id picom -b
