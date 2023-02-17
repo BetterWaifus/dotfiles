@@ -206,9 +206,9 @@ exec --no-startup-id polybar
 #starts picom compositor
 exec --no-startup-id picom -b
 
-# Add this to your .xinitrc or whatever file starts programs on startup.
-# -R restores the last colorscheme that was in use.
-exec --no-startup-id wal -R
+# pywal clear and generates a new colorscheme based on the image in wallpaper
+exec --no-startup-id wal -c
+exec --no-startup-id wal -i /home/styley/wallpaper
 
 # Prevents Discord-canary from updating
 exec --no-startup-id discord-canary-update-skip
