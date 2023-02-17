@@ -210,6 +210,12 @@ exec --no-startup-id picom -b
 # -R restores the last colorscheme that was in use.
 exec --no-startup-id wal -R
 
+# Prevents Discord-canary from updating
+exec --no-startup-id discord-canary-update-skip
+
+# Sets BetterDiscord Theme
+exec --no-startup-id pywal-discord
+
 # Set colors from Xresources
 # Change 'color7' and 'color2' to whatever colors you want i3 to use 
 # from the generated scheme.
